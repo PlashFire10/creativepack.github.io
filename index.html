@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BuscaOferta</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -87,170 +87,72 @@
       padding: 18px 30px;
       font-weight: 700;
       cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .search-box button:hover {
-      background: #fde047;
-    }
-
-    .hero {
-      padding: 100px 0;
-    }
-
-    .hero-content {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      align-items: center;
-      gap: 60px;
-    }
-
-    .hero span {
-      background: rgba(250, 204, 21, 0.1);
-      color: #fde047;
-      padding: 10px 18px;
-      border-radius: 30px;
-      border: 1px solid rgba(250, 204, 21, 0.3);
-      display: inline-block;
-      font-size: 0.9rem;
-    }
-
-    .hero h2 {
-      font-size: 4rem;
-      line-height: 1.1;
-      margin-top: 25px;
-      font-weight: 900;
-    }
-
-    .hero p {
-      color: #a1a1aa;
-      margin-top: 25px;
-      font-size: 1.1rem;
-      line-height: 1.7;
-    }
-
-    .hero-buttons {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 35px;
-    }
-
-    .btn-primary {
-      background: #facc15;
-      color: black;
-      padding: 16px 35px;
-      border-radius: 18px;
-      font-weight: 700;
-      transition: 0.3s;
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-3px);
-    }
-
-    .btn-secondary {
-      border: 1px solid #3f3f46;
-      color: white;
-      padding: 16px 35px;
-      border-radius: 18px;
-      transition: 0.3s;
-    }
-
-    .btn-secondary:hover {
-      background: #18181b;
-    }
-
-    .hero img {
-      width: 100%;
-      border-radius: 30px;
-      border: 1px solid #27272a;
-    }
-
-    .section-title {
-      font-size: 2.8rem;
-      font-weight: 900;
-      margin-bottom: 40px;
-    }
-
-    .categories {
-      padding: 40px 0 80px;
-    }
-
-    .category-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-      gap: 20px;
-    }
-
-    .category-card {
-      background: #111111;
-      border: 1px solid #27272a;
-      padding: 35px 20px;
-      text-align: center;
-      border-radius: 25px;
-      transition: 0.3s;
-      cursor: pointer;
-    }
-
-    .category-card:hover {
-      border-color: #facc15;
-      transform: translateY(-5px);
     }
 
     .products {
       padding: 80px 0;
     }
 
+    /* 🔥 GRID AJUSTADO */
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
     }
 
+    /* 🔥 CARD FLEX PARA ALINHAR TUDO */
     .product-card {
       background: #111111;
       border: 1px solid #27272a;
       border-radius: 30px;
       overflow: hidden;
-      transition: 0.4s;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      transition: 0.3s;
     }
 
     .product-card:hover {
-      transform: translateY(-10px);
+      transform: translateY(-8px);
       border-color: #facc15;
     }
 
+    /* 🔥 IMAGEM MENOR E PROPORCIONAL */
     .product-card img {
       width: 100%;
-      height: 260px;
+      height: 180px;
       object-fit: cover;
       background: white;
     }
 
+    /* 🔥 CONTEÚDO FLEX */
     .product-info {
-      padding: 25px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
     }
 
     .product-info h3 {
-      font-size: 1.3rem;
-      margin-bottom: 15px;
+      font-size: 1rem;
+      margin-bottom: 10px;
     }
 
     .price {
       color: #facc15;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 900;
-      margin-bottom: 20px;
-      display: block;
+      margin-bottom: 15px;
     }
 
+    /* 🔥 BOTÃO ALINHADO SEMPRE EM BAIXO */
     .offer-btn {
+      margin-top: auto;
       display: block;
       text-align: center;
       background: #facc15;
       color: black;
-      padding: 16px;
+      padding: 14px;
       border-radius: 18px;
       font-weight: 700;
       transition: 0.3s;
@@ -258,286 +160,103 @@
 
     .offer-btn:hover {
       background: #fde047;
+      transform: scale(1.02);
     }
 
-    .benefits {
-      background: #111111;
-      border-top: 1px solid #27272a;
-      border-bottom: 1px solid #27272a;
-      padding: 90px 0;
-    }
-
-    .benefits-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-
-    .benefit-card {
-      background: #09090b;
-      border: 1px solid #27272a;
-      border-radius: 30px;
-      padding: 35px;
-    }
-
-    .benefit-card h3 {
-      color: #facc15;
-      font-size: 1.7rem;
-      margin-bottom: 15px;
-    }
-
-    .benefit-card p {
-      color: #a1a1aa;
-      line-height: 1.7;
-    }
-
-    .newsletter {
-      text-align: center;
-      padding: 100px 0;
-    }
-
-    .newsletter h2 {
-      font-size: 4rem;
-      font-weight: 900;
-    }
-
-    .newsletter p {
-      color: #a1a1aa;
-      margin-top: 20px;
-      font-size: 1.1rem;
-    }
-
-    .newsletter-form {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 40px;
-    }
-
-    .newsletter-form input {
-      width: 400px;
-      max-width: 100%;
-      background: #111111;
-      border: 1px solid #27272a;
-      color: white;
-      padding: 18px;
-      border-radius: 18px;
-      outline: none;
-    }
-
-    .newsletter-form button {
-      background: #facc15;
-      color: black;
-      border: none;
-      padding: 18px 40px;
-      border-radius: 18px;
-      font-weight: 700;
-      cursor: pointer;
-    }
-
-    footer {
-      border-top: 1px solid #27272a;
-      padding-top: 50px;
-      background: #09090b;
-    }
-
-    .footer-content {
-      display: flex;
-      justify-content: space-between;
-      gap: 40px;
-      flex-wrap: wrap;
-      padding-bottom: 40px;
-    }
-
-    .footer-content h2 {
-      color: #facc15;
-      font-size: 2rem;
-      font-weight: 900;
-    }
-
-    .footer-content p,
-    .footer-content a {
-      color: #a1a1aa;
-      line-height: 2;
-    }
-
-    .copyright {
-      border-top: 1px solid #27272a;
-      text-align: center;
-      padding: 20px;
-      color: #71717a;
-      font-size: 0.9rem;
-    }
-
-    @media(max-width: 768px) {
-      .hero h2 {
-        font-size: 2.8rem;
-      }
-
-      .newsletter h2 {
-        font-size: 2.5rem;
-      }
-
-      .section-title {
-        font-size: 2rem;
-      }
-    }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <div class="container header-content">
-      <div class="logo">
-        <h1>BuscaOferta</h1>
-        <p>Pesquise produtos com facilidade</p>
-      </div>
-
-      <div class="search-box">
-        <input type="text" placeholder="Pesquise celulares, notebooks, games...">
-        <button>Buscar</button>
-      </div>
+<header>
+  <div class="container header-content">
+    <div class="logo">
+      <h1>BuscaOferta</h1>
+      <p>Pesquise produtos com facilidade</p>
     </div>
-  </header>
 
-  <section class="hero">
-    <div class="container hero-content">
-      <div>
-        <span>Marketplace Inteligente</span>
-
-        <h2>
-          Encontre produtos do Mercado Livre rapidamente
-        </h2>
-
-        <p>
-          Pesquise milhares de produtos, descubra promoções e encontre as melhores ofertas em segundos.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="#produtos" class="btn-primary">Explorar Ofertas</a>
-          <a href="#categorias" class="btn-secondary">Ver Categorias</a>
-        </div>
-      </div>
-
-      <div>
-        <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200&auto=format&fit=crop" alt="Marketplace">
-      </div>
-    </div>
-  </section>
-
-# HTML Atualizado — BuscaOferta
-
-Substitua a seção antiga de categorias + produtos pelo código abaixo:
-
-```html
-<section class="categories" id="categorias">
-  <div class="container">
-    <h2 class="section-title">Categorias</h2>
-
-    <div class="category-grid">
-      <div class="category-card">Notebook</div>
-      <div class="category-card">Computador</div>
-      <div class="category-card">Monitor</div>
-      <div class="category-card">Hardware</div>
+    <div class="search-box">
+      <input type="text" placeholder="Pesquise celulares, notebooks, games...">
+      <button>Buscar</button>
     </div>
   </div>
-</section>
+</header>
 
-<section class="products" id="produtos">
+
+
+<section class="products">
   <div class="container">
-    <h2 class="section-title">Produtos em Destaque</h2>
+
+    <h2 class="section-title">Produtos</h2>
 
     <div class="product-grid" id="productGrid"></div>
+
   </div>
 </section>
 
 <script>
   const produtos = [
     {
-      nome: 'Computador Gamer Intel Core i7 16GB SSD 512GB Monitor 19" Kit Strong Tech',
+      nome: 'Computador Gamer Intel Core i7 16GB SSD 512GB',
       preco: 'R$ 1.868',
-      categoria: 'Computador',
-      imagem: 'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=1200&auto=format&fit=crop',
+      imagem: 'https://http2.mlstatic.com/D_NQ_NP_2X_988423-MLA100007094971_122025-F.webp',
       link: 'https://meli.la/2NhixEq'
     },
 
     {
-      nome: 'Notebook Asus Vivobook 15 X1504va Intel Core i5 1334U 8GB RAM 512GB SSD',
+      nome: 'Notebook Asus Vivobook 15 Intel Core i5',
       preco: 'R$ 3.078',
-      categoria: 'Notebook',
       imagem: 'https://http2.mlstatic.com/D_NQ_NP_2X_874192-MLA99597035710_122025-F.webp',
       link: 'https://meli.la/1PEsqeY'
     },
 
     {
-      nome: 'Computador Completo Intel Core i5 16GB SSD 512GB Monitor 20"',
+      nome: 'Computador Completo Intel Core i5 16GB SSD',
       preco: 'R$ 1.635',
-      categoria: 'Computador',
-      imagem: 'https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=1200&auto=format&fit=crop',
+      imagem: 'https://http2.mlstatic.com/D_NQ_NP_2X_947438-MLA109935568933_042026-F.webp',
       link: 'https://meli.la/2i32B5x'
     },
 
     {
-      nome: 'Placa-mãe Asus AMD AM4 B550M-PLUS TUF Gaming',
+      nome: 'Placa-mãe Asus AMD AM4 B550M',
       preco: 'R$ 797',
-      categoria: 'Hardware',
-      imagem: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop',
+      imagem: 'https://http2.mlstatic.com/D_NQ_NP_2X_666926-MLA99989580013_112025-F.webp',
       link: 'https://meli.la/1fAiqeS'
     },
 
     {
-      nome: 'PC Computador Completo Intel i5 16GB SSD 480GB Monitor 19',
-      preco: 'R$ 1.483',
-      categoria: 'Computador',
-      imagem: 'https://images.unsplash.com/photo-1547082299-de196ea013d6?q=80&w=1200&auto=format&fit=crop',
-      link: 'https://meli.la/2fkwFCJ'
-    },
-
-    {
-      nome: 'Monitor LG UltraGear 24" Full HD 144Hz 1ms',
+      nome: 'Monitor LG UltraGear 24 144Hz',
       preco: 'R$ 679',
-      categoria: 'Monitor',
-      imagem: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=1200&auto=format&fit=crop',
+      imagem: 'https://http2.mlstatic.com/D_NQ_NP_2X_685909-MLA101438581463_122025-F.webp',
       link: 'https://meli.la/1JtZZra'
     },
 
-    {
-      nome: 'Monitor AOC 21.5" 120Hz 1ms Gaming HDMI',
-      preco: 'R$ 469',
-      categoria: 'Monitor',
-      imagem: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=1200&auto=format&fit=crop',
-      link: 'https://meli.la/2jixAm5'
-    },
-
-    {
-      nome: 'Placa Mãe TGT H61-T DDR3 LGA1155',
-      preco: 'R$ 127',
-      categoria: 'Hardware',
-      imagem: 'https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?q=80&w=1200&auto=format&fit=crop',
-      link: 'https://meli.la/1KinEKC'
+        {
+      nome: 'Monitor LG UltraGear 24 144Hz',
+      preco: 'R$ 3.699',
+      imagem: 'https://http2.mlstatic.com/D_NQ_NP_2X_678582-MLA99572282914_122025-F.webp',
+      link: 'https://meli.la/1ErojXP'
     }
+
+    
+    
+    
+    
   ];
 
   const productGrid = document.getElementById("productGrid");
-  const searchInput = document.querySelector(".search-box input");
 
   function renderizarProdutos(lista) {
     productGrid.innerHTML = "";
 
-    lista.forEach(produto => {
+    lista.forEach(p => {
       productGrid.innerHTML += `
         <div class="product-card">
-          <img src="${produto.imagem}" alt="${produto.nome}">
-
+          <img src="${p.imagem}">
           <div class="product-info">
-            <h3>${produto.nome}</h3>
-
-            <span class="price">${produto.preco}</span>
-
-            <a href="${produto.link}" target="_blank" class="offer-btn">
-              Ver Oferta
-            </a>
+            <h3>${p.nome}</h3>
+            <span class="price">${p.preco}</span>
+            <a href="${p.link}" target="_blank" class="offer-btn">Ver Produto</a>
           </div>
         </div>
       `;
@@ -545,113 +264,7 @@ Substitua a seção antiga de categorias + produtos pelo código abaixo:
   }
 
   renderizarProdutos(produtos);
-
-  searchInput.addEventListener("input", () => {
-    const valor = searchInput.value.toLowerCase();
-
-    const filtrados = produtos.filter(produto =>
-      produto.nome.toLowerCase().includes(valor) ||
-      produto.categoria.toLowerCase().includes(valor)
-    );
-
-    renderizarProdutos(filtrados);
-  });
-
-  const categorias = document.querySelectorAll(".category-card");
-
-  categorias.forEach(categoria => {
-    categoria.addEventListener("click", () => {
-      const texto = categoria.innerText.toLowerCase();
-
-      const filtrados = produtos.filter(produto =>
-        produto.categoria.toLowerCase().includes(texto)
-      );
-
-      renderizarProdutos(filtrados);
-    });
-  });
 </script>
-```
-
-Agora:
-
-* A busca funciona em tempo real
-* Os produtos são gerados automaticamente
-* As categorias filtram corretamente
-* Seus links do Mercado Livre já estão aplicados
-* O código ficou muito mais limpo e profissional
-
-
-      </div>
-    </div>
-  </section>
-
-  <section class="benefits">
-    <div class="container benefits-grid">
-
-      <div class="benefit-card">
-        <h3>Pesquisa Rápida</h3>
-        <p>
-          Encontre qualquer produto em segundos usando nossa busca inteligente.
-        </p>
-      </div>
-
-      <div class="benefit-card">
-        <h3>Ofertas Reais</h3>
-        <p>
-          Descubra promoções atualizadas diariamente com os melhores preços.
-        </p>
-      </div>
-
-      <div class="benefit-card">
-        <h3>Compra Segura</h3>
-        <p>
-          Você é redirecionado para o Mercado Livre com total segurança.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="newsletter">
-    <div class="container">
-      <h2>Receba ofertas exclusivas</h2>
-
-      <p>
-        Cadastre-se e receba promoções diariamente.
-      </p>
-
-      <div class="newsletter-form">
-        <input type="email" placeholder="Digite seu e-mail">
-        <button>Cadastrar</button>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container footer-content">
-      <div>
-        <h2>BuscaOferta</h2>
-
-        <p>
-          Plataforma inteligente para pesquisa de produtos e ofertas online.
-        </p>
-      </div>
-
-      <div>
-        <h3>Links</h3>
-
-        <a href="#">Início</a><br>
-        <a href="#">Categorias</a><br>
-        <a href="#">Ofertas</a><br>
-        <a href="#">Contato</a>
-      </div>
-    </div>
-
-    <div class="copyright">
-      © 2026 BuscaOferta - Todos os direitos reservados.
-    </div>
-  </footer>
 
 </body>
 </html>
