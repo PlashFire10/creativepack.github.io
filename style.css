@@ -394,5 +394,63 @@ header {
     font-size: 1.5rem;
   }
 
-  
+ 
+/* =========================
+   BOTÃO CARREGAR MAIS
+========================= */
+
+
+
+.load-more-wrapper .offer-btn{
+    padding: 10px 22px;
+    font-size: 14px;
+}
+
+.load-more-btn{
+    all: unset;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(180deg, #ffe24a 0%, #f7d420 100%) !important;
+
+    color: #000 !important;
+
+    padding: 16px 38px !important;
+
+    border-radius: 18px !important;
+
+    font-size: 16px !important;
+
+    font-weight: 700 !important;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    box-shadow:
+        0 6px 18px rgba(255, 217, 0, 0.25),
+        inset 0 1px 0 rgba(255,255,255,0.4);
+
+    transition: all 0.25s ease;
+
+    border: none !important;
+}
+
+.load-more-btn:hover{
+    transform: translateY(-2px) scale(1.03);
+
+    box-shadow:
+        0 10px 24px rgba(255, 217, 0, 0.35),
+        inset 0 1px 0 rgba(255,255,255,0.5);
+}
+
+.load-more-btn:active{
+    transform: scale(0.98);
+}
+
+.load-more-wrapper .offer-btn{
+    margin-top: 30px;
+}
 }
